@@ -1,0 +1,23 @@
+﻿@model string[]
+
+@foreach (string res in Model)
+{
+    if (res == "Locked")
+    {
+         <input type ="hidden"  name = "ID" value ="@ViewBag.ID"/>
+         <input type="hidden" name = "type" value ="@ViewBag.type"/>
+         <input type="hidden" name = "Action" value ="Unlocked"/>
+         <input type="hidden" name = "Parametr" value = null/>
+         <input type="submit" value="" style ="background-image: url(..//Locked.png);"/>
+         <p align ="center">Device status: @res</p>
+    }
+    else
+    {
+         <input type ="hidden"  name = "ID" value ="@ViewBag.ID"/>
+         <input type="hidden" name = "type" value ="@ViewBag.type"/>
+         <input type="hidden" name = "Action" value ="Locked"/>
+         <input type="hidden" name = "Parametr" value = null/>
+         <input type="submit" value="" style ="background-image: url(..//Unlocked.png);"/>
+         <p align ="center">Device status: @res</p>
+    }
+} 

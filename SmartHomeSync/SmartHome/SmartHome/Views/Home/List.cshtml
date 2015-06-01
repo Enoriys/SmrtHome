@@ -1,0 +1,198 @@
+﻿@model SmartHome.Models.DeviceListViewModel
+
+@{
+    ViewBag.Title = "List";
+}
+<head runat="server">
+
+        <script src="~/Scripts/jquery-1.8.3.js"></script>
+        <script src="~/Scripts/jquery-1.8.3.min.js"></script>
+        <script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+
+@{IEnumerable<string> types = Model.Devices
+        .Select(x => x.Type)
+         .Distinct()
+         .OrderBy(x => x);
+}
+<script type="text/javascript">
+    function showHide(typeDevice) {
+        var hiddeninputs = document.getElementsByClassName(typeDevice.toString());
+        var checkbox = document.getElementById(typeDevice.toString());
+        for(var i = 0;i!= hiddeninputs.length;i++)
+        {
+            if(checkbox.checked == false)
+            {
+                hiddeninputs[i].style.display = "block";
+                checkbox.checked = true;
+            }
+            else if(checkbox.checked == true)
+            {
+                hiddeninputs[i].style.display = "none";
+                checkbox.checked = false;
+            }           
+        }       
+    }
+</script>
+<div align ="center">
+
+
+
+@foreach (string typeDevice in types)
+{
+    if (typeDevice == "Lamp")
+    {
+        <div class ="box" onclick ="showHide('@typeDevice')">
+        <img src="~/Content/LightBulb.png" style="position:relative"/>
+        <svg width="250" height="250">
+        <line class="top" x1="0" y1="0" x2="750" y2="0"/>
+        <line class="left" x1="0" y1="250" x2="0" y2="-500"/>
+        <line class="bottom" x1="250" y1="250" x2="-500" y2="250"/>
+        <line class="right" x1="250" y1="0" x2="250" y2="750"/>
+        </svg>
+        </div>
+        <input type ="checkbox" name ="chkbox" id=@typeDevice class="Hidden"/>
+    }
+    else if (typeDevice == "Tempr")
+    {
+        <div class ="box" onclick ="showHide('@typeDevice')">
+        <img src="~/Content/Thermometer.jpg" style="position:relative"/>
+        <svg width="250" height="250">
+        <line class="top" x1="0" y1="0" x2="750" y2="0"/>
+        <line class="left" x1="0" y1="250" x2="0" y2="-500"/>
+        <line class="bottom" x1="250" y1="250" x2="-500" y2="250"/>
+        <line class="right" x1="250" y1="0" x2="250" y2="750"/>
+        </svg>
+        </div>
+        <input type ="checkbox" name ="chkbox" id=@typeDevice class="Hidden"/>
+    }
+    else if (typeDevice == "Lock")
+    {
+        <div class ="box" onclick ="showHide('@typeDevice')">
+        <img src="~/Content/Lock.png" style="position:relative"/>
+        <svg width="250" height="250">
+        <line class="top" x1="0" y1="0" x2="750" y2="0"/>
+        <line class="left" x1="0" y1="250" x2="0" y2="-500"/>
+        <line class="bottom" x1="250" y1="250" x2="-500" y2="250"/>
+        <line class="right" x1="250" y1="0" x2="250" y2="750"/>
+        </svg>
+        </div>
+        <input type ="checkbox" name ="chkbox" id=@typeDevice class="Hidden"/>
+    }
+}
+</div>
+             
+@foreach (string tp in types)
+{
+    <div class = @tp align ="center">       
+        <table style ="background-color:#2c3e50;">
+        <tbody style ="background-color:#2c3e50;">
+        <tr style ="background-color:#2c3e50;">
+            @foreach (var device in Model.Devices)
+            {
+                <td style ="vertical-align:top; background-color:#2c3e50;">
+                @if (device.Type == tp)
+                {
+                    string stri = device.DeviceID.ToString() + device.Type.ToString();
+                    
+                    <p align ="center">Device ID: @device.DeviceID</p> 
+                    <p align ="center">Device Name: @device.Name</p>
+                                      
+                    if (tp == "Lamp")
+                    {
+                        using (Ajax.BeginForm("DeviceActionLamp", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
+                        {
+                            if (device.status == "ON")
+                            {
+
+                                <div id =@device.DeviceID.ToString() style="position: relative;">
+                                         <input type="submit" value="" style ="background-image: url(..//LightBulbOn.png);"/> 
+                                         <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                         <input type="hidden" name = "type" value ="@device.Type"/>
+                                         <input type="hidden" name = "Action" value ="OFF"/>
+                                         <input type="hidden" name = "Parametr" value = null/>                                                                                                                               
+                                         <p align ="center">Device status: @device.status</p>
+                                         
+                                 </div>
+                            }
+                            else
+                            {
+                                <div id =@device.DeviceID.ToString() style="position: relative;" > 
+                                <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                <input type="hidden" name = "type" value ="@device.Type"/>
+                                <input type="hidden" name = "Action" value ="ON"/>
+                                <input type="hidden" name = "Parametr" value = null/>
+                                <input type="submit" value="" style= "background-image: url(..//LightBulbOff.png);"/>
+                                <p align ="center">Device status: @device.status</p>
+                                </div>                                                
+                            }
+                        }
+                    }
+                    else if (tp == "Tempr")
+                    {
+                        using (Ajax.BeginForm("DeviceActionTempr", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
+                        {
+                           
+                            <div id =@device.DeviceID.ToString() style="position: relative;"> 
+                            <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                            <input type="hidden" name = "type" value ="@device.Type"/>
+                            <input type="hidden" name = "Action" value ="ShowTemp"/>
+                             @if ((Convert.ToInt32(device.status) < 10) & (Convert.ToInt32(device.status) > 0))
+                             {
+                                 <input type="submit" value="" style ="background-image: url(..//Thermometer.png);"/>
+                             }
+                             else if ((Convert.ToInt32(device.status) < 20) & (Convert.ToInt32(device.status) > 10))
+                             {
+                                 <input type="submit" value="" style ="background-image: url(..//Thermometermid.png);"/>
+                             }
+                             else
+                             {
+                                 <input type="submit" value="" style ="background-image: url(..//Thermometerhight.png);" />
+                             }
+                            
+                            <p align ="center">Device status: @device.status C</p> 
+                            </div>                                                  
+                        }
+                    }
+                    else if (tp == "Lock")
+                    {
+                        using (Ajax.BeginForm("DeviceActionlock", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
+                        {
+                            if (device.status == "Unlocked")
+                            {
+
+                                <div id =@device.DeviceID.ToString() style="position: relative;">
+                                <input type="submit" value="" style ="background-image: url(..//Unlocked.png);"/> 
+                                <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                <input type="hidden" name = "type" value ="@device.Type"/>
+                                <input type="hidden" name = "Action" value ="Locked"/>
+                                <input type="hidden" name = "Parametr" value = null/>                                                                                                                               
+                                <p align ="center">Device status: @device.status</p>      
+                                </div>
+                            }
+                            else
+                            {
+                                <div id =@device.DeviceID.ToString() style="position: relative;" > 
+                                <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                <input type="hidden" name = "type" value ="@device.Type"/>
+                                <input type="hidden" name = "Action" value ="Unlocked"/>
+                                <input type="hidden" name = "Parametr" value = null/>
+                                <input type="submit" value="" style= "background-image: url(..//Locked.png);"/>
+                                <p align ="center">Device status: @device.status</p>
+                                </div>                                                
+                            }
+                        }
+                    }                                
+                    <div id =@stri style="display:none;" align="center">
+                    <img src="~/Images/spinner.gif" />
+                    </div>
+                }
+                </td>
+            }
+        </tr>
+        </tbody>
+        </table>
+    </div>
+}          

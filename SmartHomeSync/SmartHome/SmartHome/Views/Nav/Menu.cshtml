@@ -1,0 +1,18 @@
+﻿@model IEnumerable<int>
+
+@Html.ActionLink("Home", "Index", "Home")
+
+@foreach (int link in Model)
+{
+@Html.RouteLink("Room "+link.ToString(), new
+{
+    controller = "Home",
+    action = "List",
+    Rooms = link,
+    Room = link.ToString()
+},new {
+@class = link == Convert.ToInt32(ViewBag.room) ? "selected" : null
+})
+}
+
+@Html.ActionLink("Other", "OtherActions", "Home")

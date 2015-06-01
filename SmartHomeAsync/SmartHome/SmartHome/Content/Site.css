@@ -1,0 +1,259 @@
+﻿
+body {
+    font-size: .85em;
+    color: #ecf0f1;
+    background-color: #2c3e50;
+    margin: 0;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+DIV#header DIV.title, DIV.item H3, DIV.item H4, DIV.pager A
+{
+    color: #ecf0f1;
+    font-family: 'Lato', Arial, sans-serif;
+}
+DIV#header
+{
+background-color: #242D37;
+border-bottom: 2px solid #111;
+color: White;
+}
+DIV#header DIV.title
+{
+font-size: 2em;
+padding: .6em;
+}
+DIV#content
+{
+
+border-left: 2px solid gray;
+margin-left: 10em;
+padding: 1em;
+}
+DIV#categories
+{
+float: left;
+width: 8em;
+padding: .3em;
+    font-size:larger;
+}
+
+DIV#Result
+{
+float: left;
+width: 8em;
+padding: .3em;
+}
+
+DIV.item {
+    border-top: 1px dotted gray;
+    padding-top: .7em;
+    margin-bottom: .7em;
+}
+
+DIV.item:first-child
+{
+border-top: none;
+padding-top: 0;
+}
+DIV.item H3
+{
+font-size: 1.3em;
+margin: 0 0 .25em 0;
+}
+DIV.item H4
+{
+font-size: 1.1em;
+margin: .4em 0 0 0;
+}
+DIV.pager
+{
+text-align: right;
+border-top: 2px solid silver;
+padding: .5em 0 0 0;
+margin-top: 1em;
+}
+DIV.pager A
+{
+font-size: 1.1em;
+color: #666;
+text-decoration: none;
+padding: 0 .4em 0 .4em;
+}
+DIV.pager A:hover
+{
+background-color: Silver;
+}
+DIV.pager A.selected
+{
+background-color: #242D37;
+color: White;
+}
+
+DIV#categories A
+{    
+font-family: 'Lato', Arial, sans-serif; display: block;
+text-decoration: none; 
+padding: .6em; 
+color: #ecf0f1; 
+border-bottom: 1px solid silver;
+}
+
+DIV#categories A.selected { background-color: #242D37; color: White; }
+DIV#categories A:hover { background-color: #242D37; }
+DIV#categories A.selected:hover { background-color: #242D37; }
+
+input[type=submit] {    
+    background-color: #2c3e50;
+    height: 167px;
+    width: 167px;
+    font-family: fantasy, 'Vineta BT', sans-serif; display: block;
+}
+.Hidden 
+{
+     display:none;
+}
+.Lamp
+{
+     display:none;
+}
+.Tempr 
+{
+     display:none;
+}
+.Lock 
+{
+     display:none;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+    color: #2C3E50;
+    box-shadow: 0px 0px 0px 3px #2C3E50 inset;
+    position: relative;
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+svg line {
+	stroke-width: 3;
+	stroke: White;
+	fill: none;
+	stroke-dasharray: 250;
+	-webkit-transition: all .5s;
+	transition: transform 1.3s;
+}
+
+div.box:hover svg line.top {
+  -webkit-transform: translateX(-500px);
+  transform: translateX(-500px);
+}
+
+div.box:hover svg line.bottom {
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+div.box:hover svg line.left {
+  -webkit-transform: translateY(500px);
+  transform: translateY(500px);
+}
+
+div.box:hover svg line.right {
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px);
+}
+
+
+.child {
+    display:inline-block;
+    vertical-align:middle;
+}
+.helper {
+    display:inline-block;
+    vertical-align:middle;
+    height:100%;
+    width:0px;
+}
+
+.child span {
+  display: block;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.child h3 {
+  font-family: "Ruthie", cursive;
+  font-size: 20px;
+  line-height: 150px;
+  margin: 0;
+  font-weight: 400;
+  width: 100%;
+}
+

@@ -1,0 +1,8 @@
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\bin\Debug\HoveService.dll.config
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\bin\Debug\HoveService.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\bin\Debug\HoveService.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\bin\Debug\DevicesController.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\bin\Debug\DevicesController.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\obj\Debug\HoveService.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\obj\Debug\HoveService.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\HoveService\obj\Debug\HoveService.pdb

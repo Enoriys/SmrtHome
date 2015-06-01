@@ -1,0 +1,86 @@
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\SmartHome.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\SmartHome.pdb
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\Antlr3.Runtime.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\EntityFramework.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\Microsoft.Web.Infrastructure.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Net.Http.Formatting.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Http.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Http.WebHost.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Mvc.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Optimization.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Providers.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Razor.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.WebPages.Deployment.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.WebPages.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.WebPages.Razor.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\WebGrease.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\EntityFramework.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Net.Http.Formatting.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Http.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Http.WebHost.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Mvc.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.Razor.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.WebPages.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.WebPages.Deployment.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\System.Web.WebPages.Razor.xml
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\EntityFramework.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Net.Http.Formatting.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.Http.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.Http.WebHost.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.Mvc.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.Optimization.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.Providers.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.Razor.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.WebPages.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.WebPages.Deployment.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\bin\ru\System.Web.WebPages.Razor.resources.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\obj\Debug\SmartHome.dll
+c:\users\dego\documents\visual studio 2012\Projects\SmartHome\SmartHome\obj\Debug\SmartHome.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\SmartHome\bin\amd64\Microsoft.VC100.CRT\msvcr100.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\SmartHome\bin\amd64\Microsoft.VC100.CRT\msvcp100.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\SmartHome\bin\Newtonsoft.Json.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\SmartHome\bin\Newtonsoft.Json.xml
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\SmartHome\obj\Debug\SmartHome.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\SmartHome.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\SmartHome.pdb
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\amd64\Microsoft.VC100.CRT\msvcr100.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\amd64\Microsoft.VC100.CRT\msvcp100.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\Antlr3.Runtime.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\EntityFramework.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\Newtonsoft.Json.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Net.Http.Formatting.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Http.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Http.WebHost.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Mvc.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Optimization.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Providers.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Razor.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.WebPages.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\WebGrease.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\Newtonsoft.Json.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\EntityFramework.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Net.Http.Formatting.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Http.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Http.WebHost.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Mvc.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.Razor.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.WebPages.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\EntityFramework.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Net.Http.Formatting.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.Http.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.Http.WebHost.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.Providers.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\obj\Debug\SmartHome.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\obj\Debug\SmartHome.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmartHome\SmartHome\obj\Debug\SmartHome.pdb

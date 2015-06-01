@@ -1,0 +1,10 @@
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\DevicesController\DevicesController\bin\Debug\DevicesController.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\DevicesController\DevicesController\bin\Debug\DevicesController.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\DevicesController\DevicesController\obj\Debug\DevicesController.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\DevicesController\DevicesController\obj\Debug\DevicesController.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\DevicesController\DevicesController\obj\Debug\DevicesController.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmartHomeAsync\DevicesController\DevicesController\bin\Debug\DevicesController.dll
+C:\Users\Dego\Desktop\SmartHomeAsync\DevicesController\DevicesController\bin\Debug\DevicesController.pdb
+C:\Users\Dego\Desktop\SmartHomeAsync\DevicesController\DevicesController\obj\Debug\DevicesController.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmartHomeAsync\DevicesController\DevicesController\obj\Debug\DevicesController.dll
+C:\Users\Dego\Desktop\SmartHomeAsync\DevicesController\DevicesController\obj\Debug\DevicesController.pdb

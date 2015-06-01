@@ -1,0 +1,22 @@
+﻿@model string[]
+@foreach (string res in Model)
+{
+    if (res == "ON")
+    {
+         <input type ="hidden"  name = "ID" value ="@ViewBag.ID"/>
+         <input type="hidden" name = "type" value ="@ViewBag.type"/>
+         <input type="hidden" name = "Action" value ="OFF"/>
+         <input type="hidden" name = "Parametr" value = null/>
+         <input type="submit" value="" style ="background-image: url(..//LightBulbOn.png);"/>
+         <p align ="center">Device status: @res</p>
+    }
+    else
+    {
+         <input type ="hidden"  name = "ID" value ="@ViewBag.ID"/>
+         <input type="hidden" name = "type" value ="@ViewBag.type"/>
+         <input type="hidden" name = "Action" value ="ON"/>
+         <input type="hidden" name = "Parametr" value = null/>
+         <input type="submit" value="" style ="background-image: url(..//LightBulbOff.png);"/>
+         <p align ="center">Device status: @res</p>
+    }
+} 

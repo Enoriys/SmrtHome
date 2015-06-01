@@ -1,0 +1,23 @@
+﻿@model string[]
+@foreach (string res in Model)
+{
+         <input type ="hidden"  name = "ID" value ="@ViewBag.ID"/>
+         <input type="hidden" name = "type" value ="@ViewBag.type"/>
+         <input type="hidden" name = "Action" value ="ShowTemp"/>
+         if ((Convert.ToInt32(ViewBag.status) < 10) & (Convert.ToInt32(ViewBag.status) > 0))
+                             {
+                                 <input type="submit" value="" style ="background-image: url(..//Thermometer.png);"/>
+                             }
+                             else if ((Convert.ToInt32(ViewBag.status) < 20) & (Convert.ToInt32(ViewBag.status) > 10))
+                             {
+                                 <input type="submit" value="" style ="background-image: url(..//Thermometermid.png);"/>
+                             }
+                             else
+                             {
+                                 <input type="submit" value="" style ="background-image: url(..//Thermometerhight.png);" />
+                             }
+                            
+         <p align ="center">Device status: @res C</p>
+} 
+
+

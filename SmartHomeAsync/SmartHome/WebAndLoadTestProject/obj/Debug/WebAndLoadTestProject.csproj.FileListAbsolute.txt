@@ -1,0 +1,8 @@
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\bin\Debug\WebTest1.webtest
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\bin\Debug\LoadTest1.loadtest
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmartHome\WebAndLoadTestProject\bin\Debug\LoadTest2.loadtest

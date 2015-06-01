@@ -1,0 +1,17 @@
+﻿@model List<SmartHome.Models.IDevice>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h1>All Devices: </h1>
+@foreach (var entry in Model)
+{
+    <div class ="item">
+    <h3>Device ID : @entry.DeviceID</h3>
+    <h2>Device Name: @entry.Name</h2>
+    <p>Device Discription:  @entry.Description</p>
+    </div>
+    
+    
+    
+}

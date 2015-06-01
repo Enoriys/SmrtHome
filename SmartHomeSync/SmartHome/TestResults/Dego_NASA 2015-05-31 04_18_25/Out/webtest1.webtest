@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="6b284fd7-1105-4d19-865b-1d736b2376ce" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="WebTest1.a8221398-b496-4022-bbf3-f215a28464d8.rec.webtestresult">
+  <Items>
+    <Request Method="GET" Guid="7eedac8e-cba7-4155-8b4b-a5fa7040af55" Version="1.1" Url="http://localhost:2185/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a15be76a-20e0-4d5d-aa9c-4e6a3eb8c9ba" Version="1.1" Url="http://localhost:2185/Home/OtherActions" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Извлечь скрытые поля" Description="Извлеките все скрытые поля из ответа и поместите их в контекст теста.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="313b256f-23da-4b18-9d54-bd95f9c3405b" Version="1.1" Url="http://localhost:2185/Home/DeviceGlobalAction" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="type" Value="{{$HIDDEN1.type}}" RecordedValue="Lamp" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="{{$HIDDEN1.Action}}" RecordedValue="ON" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="{{$HIDDEN1.Parametr}}" RecordedValue="null/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="URL-адрес ответа" Description="Проверка того, что URL-адрес ответа после выполнения перенаправлений такой же, как записанный URL-адрес ответа. Параметры QueryString игнорируются." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Цель времени ответа" Description="Проверка на превышение временем ответа на запрос эталона времени ответа, указанного в запросе. Цели времени ответа, равные нулю, будут пропущены." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

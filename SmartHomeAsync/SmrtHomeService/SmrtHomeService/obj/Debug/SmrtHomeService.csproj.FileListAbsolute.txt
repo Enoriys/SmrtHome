@@ -1,0 +1,8 @@
+c:\users\dego\documents\visual studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe.config
+c:\users\dego\documents\visual studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe
+c:\users\dego\documents\visual studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.pdb
+c:\users\dego\documents\visual studio 2012\Projects\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.exe
+c:\users\dego\documents\visual studio 2012\Projects\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.pdb
+c:\users\dego\documents\visual studio 2012\Projects\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.pdb

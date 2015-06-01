@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest" Id="625ff0e2-4dee-405b-aa04-7bf6681efb45" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="WebTest.b393dc45-4c24-4473-b56b-f1fe56312253.rec.webtestresult">
+  <Items>
+    <Request Method="GET" Guid="73c06ca9-be64-4df0-87b9-b5b6c79eed2f" Version="1.1" Url="http://localhost:2185/" ThinkTime="7" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1.Rooms" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?Rooms=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Comment CommentText="Go to room1" />
+    <Request Method="GET" Guid="75d96002-e3f0-417f-86e6-9bd85b3cb84f" Version="1.1" Url="http://localhost:2185/Home/List" ThinkTime="4" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Извлечь скрытые поля" Description="Извлеките все скрытые поля из ответа и поместите их в контекст теста.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="Rooms" Value="1" RecordedValue="1" CorrelationBinding="{{QueryStringParam1.Rooms}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Comment CommentText="use one lamp" />
+    <Request Method="POST" Guid="a0be2935-5e1d-46d6-85d4-9be6c42a232b" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="{{$HIDDEN1.ID}}" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="{{$HIDDEN1.type}}" RecordedValue="Lamp" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="{{$HIDDEN1.Action}}" RecordedValue="OFF" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="{{$HIDDEN1.Parametr}}" RecordedValue="null/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Comment CommentText="Go to other" />
+    <Request Method="GET" Guid="cf7eebd5-4e86-411a-be8c-432e479274ad" Version="1.1" Url="http://localhost:2185/Home/OtherActions" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam11.Action" DisplayName="Извлечь поле формы" Description="Извлеките значение указанного поля формы из ответа и поместите его в контекст теста.">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="2" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam15.Action" DisplayName="Извлечь поле формы" Description="Извлеките значение указанного поля формы из ответа и поместите его в контекст теста.">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="2" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam2.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.Action" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam4.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam5.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="1" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam6.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam7.Action" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam8.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam9.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="2" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam10.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam12.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam13.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="3" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam14.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam16.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam17.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="4" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam18.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam19.Action" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam20.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam21.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="5" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam22.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam23.Action" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam24.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam25.ID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ID" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="6" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam26.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="type" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam27.Action" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Action" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam28.Parametr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="Parametr" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Comment CommentText="Use all lamps" />
+    <Request Method="POST" Guid="e169ea86-562b-4236-b4a0-dc99f57b275f" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam1.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam2.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="ON" RecordedValue="ON" CorrelationBinding="{{FormPostParam3.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam4.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="f2568457-5c87-4ed5-8bbb-25e557c9344a" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="2" RecordedValue="2" CorrelationBinding="{{FormPostParam5.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam6.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="ON" RecordedValue="ON" CorrelationBinding="{{FormPostParam7.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam8.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="fe635ea6-3b61-4d34-bc1c-b8f086e21370" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="4" RecordedValue="4" CorrelationBinding="{{FormPostParam9.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam10.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="{{FormPostParam11.Action}}" RecordedValue="OFF" CorrelationBinding="{{FormPostParam11.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam12.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="87969ab2-aee6-48a3-9a25-6b3aa3a6b2b3" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="5" RecordedValue="5" CorrelationBinding="{{FormPostParam13.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam14.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="{{FormPostParam15.Action}}" RecordedValue="OFF" CorrelationBinding="{{FormPostParam15.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam16.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="afea9656-9b00-40f0-8991-892594054438" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="7" RecordedValue="7" CorrelationBinding="{{FormPostParam17.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam18.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="ON" RecordedValue="ON" CorrelationBinding="{{FormPostParam19.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam20.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="f0fc5321-7f30-4b57-85a2-48a3ee2cc3b2" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="8" RecordedValue="8" CorrelationBinding="{{FormPostParam21.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam22.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="ON" RecordedValue="ON" CorrelationBinding="{{FormPostParam23.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam24.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="22f9a69a-d4e9-485a-8171-1566520b7874" Version="1.1" Url="http://localhost:2185/Home/DeviceActionLamp" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="ID" Value="10" RecordedValue="10" CorrelationBinding="{{FormPostParam25.ID}}" UrlEncode="True" />
+        <FormPostParameter Name="type" Value="Lamp" RecordedValue="Lamp" CorrelationBinding="{{FormPostParam26.type}}" UrlEncode="True" />
+        <FormPostParameter Name="Action" Value="ON" RecordedValue="ON" CorrelationBinding="{{FormPostParam27.Action}}" UrlEncode="True" />
+        <FormPostParameter Name="Parametr" Value="null/" RecordedValue="null/" CorrelationBinding="{{FormPostParam28.Parametr}}" UrlEncode="True" />
+        <FormPostParameter Name="X-Requested-With" Value="XMLHttpRequest" RecordedValue="XMLHttpRequest" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="URL-адрес ответа" Description="Проверка того, что URL-адрес ответа после выполнения перенаправлений такой же, как записанный URL-адрес ответа. Параметры QueryString игнорируются." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Цель времени ответа" Description="Проверка на превышение временем ответа на запрос эталона времени ответа, указанного в запросе. Цели времени ответа, равные нулю, будут пропущены." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

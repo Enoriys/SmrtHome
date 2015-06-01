@@ -1,0 +1,20 @@
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe.config
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\HoveService.dll
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\HoveService.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\obj\Debug\Host.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.exe
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.pdb
+C:\Users\Dego\Documents\Visual Studio 2012\Projects\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe.config
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.exe
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.pdb
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.pdb
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\HoveService.dll
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\HoveService.pdb
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.pdb
+C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\obj\Debug\Host.csprojResolveAssemblyReference.cache

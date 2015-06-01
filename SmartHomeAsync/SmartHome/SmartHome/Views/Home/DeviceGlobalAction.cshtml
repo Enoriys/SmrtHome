@@ -1,0 +1,227 @@
+﻿@model SmartHome.Models.DeviceListViewModel
+
+@if (ViewBag.DeviceType == "Lamp")
+{
+     <table>
+        <tbody>
+        <tr>
+            @foreach (var device in Model.Devices)
+            {
+                <td style ="vertical-align:top">
+                    @{string stri = device.DeviceID.ToString() + device.Type.ToString(); }
+                    
+                    <p align ="center">Device ID: @device.DeviceID</p> 
+                    <p align ="center">Device Name: @device.Name</p>
+                    <p align ="center">Device Room: @device.Room</p>        
+                    
+                        @using (Ajax.BeginForm("DeviceActionLamp", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
+                        {
+                            if (device.status == "ON")
+                            {
+
+                                 <div id =@device.DeviceID.ToString()>
+                                 <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                 <input type="hidden" name = "type" value ="@device.Type"/>
+                                 <input type="hidden" name = "Action" value ="OFF"/>
+                                 <input type="hidden" name = "Parametr" value = null/>                                                      
+                                 <input type="submit" value="" style ="background-image: url(..//LightBulbOn.png);"/>
+                                 <p align ="center">Device status: @device.status</p>
+                                 </div>
+                            }
+                            else
+                            {
+                                <div id =@device.DeviceID.ToString()> 
+                                <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                <input type="hidden" name = "type" value ="@device.Type"/>
+                                <input type="hidden" name = "Action" value ="ON"/>
+                                <input type="hidden" name = "Parametr" value = null/>
+                                <input type="submit" value="" style ="background-image: url(..//LightBulbOff.png);"/>
+                                <p align ="center">Device status: @device.status</p>
+                                </div>                                                
+                            }
+                        }
+                    <div id = @stri style="display:none;" align="center">
+                    <img src="~/Images/spinner.gif" />
+                    </div>
+                </td>
+            }
+        </tr>
+        </tbody>
+        </table>  
+     <table>
+            <tbody>
+                        <tr>
+                        <td style ="vertical-align:top">
+                        @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "LampLamp", LoadingElementId = "LampGON" }))
+                        {
+                            <input type="hidden" name = "type" value ="Lamp"/>
+                            <input type="hidden" name = "Action" value ="ON"/>
+                            <input type="hidden" name = "Parametr" value = null/>
+                            <input type="submit" value="Enable ALL" style ="height: 40px;width: 200px;color:white;font-size: 25px"/>
+                        } 
+                        <div id ="LampGON" style="display:none;" align="center">
+                        <img src="~/Images/spinner.gif" />
+                        </div>
+                       </td>
+                       </tr>
+                       <tr>
+                        <td style ="vertical-align:top"> 
+                        @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "LampLamp", LoadingElementId = "LampGOFF" }))
+                        {
+                            <input type="hidden" name = "type" value ="Lamp"/>
+                            <input type="hidden" name = "Action" value ="OFF"/>
+                            <input type="hidden" name = "Parametr" value = null/>
+                            <input type="submit" value="Disable ALL" style ="height: 40px;width: 200px;color:white;font-size: 25px"/>
+                        } 
+                        <div id ="LampGOFF" style="display:none;" align="center">
+                        <img src="~/Images/spinner.gif" />
+                        </div>
+                        </td>
+                        </tr>
+            </tbody>
+        </table>
+}
+else if (ViewBag.DeviceType == "Tempr")
+{
+    <table>
+        <tbody>
+        <tr>
+            @foreach (var device in Model.Devices)
+            {
+                <td style ="vertical-align:top">
+                    @{string stri = device.DeviceID.ToString() + device.Type.ToString(); }
+                    
+                    <p align ="center">Device ID: @device.DeviceID</p> 
+                    <p align ="center">Device Name: @device.Name</p>
+                    <p align ="center">Device Room: @device.Room</p>        
+                    
+                        @using (Ajax.BeginForm("DeviceActionTempr", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
+                        {
+                             <div id =@device.DeviceID.ToString() style="position: relative;"> 
+                            <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                            <input type="hidden" name = "type" value ="@device.Type"/>
+                            <input type="hidden" name = "Action" value ="ShowTemp"/>
+                             @if ((Convert.ToInt32(device.status) < 10) & (Convert.ToInt32(device.status) > 0))
+                             {
+                                 <input type="submit" value="" style ="background-image: url(http://localhost:2185//Thermometer.png);"/>
+                             }
+                             else if ((Convert.ToInt32(device.status) < 20) & (Convert.ToInt32(device.status) > 10))
+                             {
+                                 <input type="submit" value="" style ="background-image: url(http://localhost:2185//Thermometermid.png);"/>
+                             }
+                             else
+                             {
+                                 <input type="submit" value="" style ="background-image: url(http://localhost:2185//Thermometerhight.png);" />
+                             }
+                                 <p align ="center">Device status: @device.status C</p>
+                            </div> 
+                                                                           
+                        }
+                    <div id = @stri style="display:none;" align="center">
+                    <img src="~/Images/spinner.gif" />
+                    </div>
+                </td>
+            }
+        </tr>
+        </tbody>
+        </table>  
+    <table>
+            <tbody>
+                        <tr>
+                        <td style ="vertical-align:top">
+                         @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "TemprTempr", LoadingElementId = "TemprCheck" }))
+                            {
+                                <input type="hidden" name = "type" value ="Tempr"/>
+                                <input type="hidden" name = "Action" value ="ShowTemp"/>
+                                <input type="submit" value="Update" style ="height: 40px;width: 200px;color:white;font-size: 25px"/>
+                            } 
+                            <div id ="TemprCheck" style="display:none;" align="center">
+                            <img src="~/Images/spinner.gif" />
+                           </div
+                        </td>
+                        </tr>
+            </tbody>
+        </table>
+}
+else if (ViewBag.DeviceType == "Lock")
+{
+            <table>
+        <tbody>
+        <tr>
+            @foreach (var device in Model.Devices)
+            {
+                <td style ="vertical-align:top">
+                    @{string stri = device.DeviceID.ToString() + device.Type.ToString();}
+                    <p align ="center">Device ID: @device.DeviceID</p> 
+                    <p align ="center">Device Name: @device.Name</p>
+                    <p align ="center">Device Room: @device.Room</p>                          
+
+                        @using (Ajax.BeginForm("DeviceActionlock", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
+                        {
+                            if (device.status == "Unlocked")
+                            {
+
+                                <div id =@device.DeviceID.ToString() style="position: relative;">
+                                <input type="submit" value="" style ="background-image: url(..//Unlocked.png);"/> 
+                                <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                <input type="hidden" name = "type" value ="@device.Type"/>
+                                <input type="hidden" name = "Action" value ="Locked"/>
+                                <input type="hidden" name = "Parametr" value = null/>                                                                                                                               
+                                <p align ="center">Device status: @device.status</p>      
+                                </div>
+                            }
+                            else
+                            {
+                                <div id =@device.DeviceID.ToString() style="position: relative;" > 
+                                <input type ="hidden"  name = "ID" value ="@device.DeviceID"/>
+                                <input type="hidden" name = "type" value ="@device.Type"/>
+                                <input type="hidden" name = "Action" value ="Unlocked"/>
+                                <input type="hidden" name = "Parametr" value = null/>
+                                <input type="submit" value="" style= "background-image: url(..//Locked.png);"/>
+                                <p align ="center">Device status: @device.status</p>
+                                </div>                                                
+                            }
+                        }
+                 
+                    <div id =@stri style="display:none;" align="center">
+                    <img src="~/Images/spinner.gif" />
+                    </div>
+                </td>
+            }
+        </tr>
+        </tbody>
+        </table>
+    
+    <table>
+            <tbody>
+                        <tr>
+                        <td style ="vertical-align:top">
+                        @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "LockLock", LoadingElementId = "LockON" }))
+                        {
+                            <input type="hidden" name = "type" value ="Lock"/>
+                            <input type="hidden" name = "Action" value ="Locked"/>
+                            <input type="hidden" name = "Parametr" value = null/>
+                            <input type="submit" value="Lock ALL" style ="height: 40px;width: 200px;color:white;font-size: 25px";/>
+                        } 
+                        <div id ="LockON" style="display:none;" align="center">
+                        <img src="~/Images/spinner.gif" />
+                        </div>
+                       </td>
+                       </tr>
+                       <tr>
+                        <td style ="vertical-align:top"> 
+                        @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "LockLock", LoadingElementId = "LockOFF" }))
+                        {
+                            <input type="hidden" name = "type" value ="Lock"/>
+                            <input type="hidden" name = "Action" value ="Unlocked"/>
+                            <input type="hidden" name = "Parametr" value = null/>
+                            <input type="submit" value="Unlock ALL" style ="height: 40px;width: 200px;color:white;font-size: 25px"/>
+                        } 
+                        <div id ="LockOFF" style="display:none;" align="center">
+                        <img src="~/Images/spinner.gif" />
+                        </div>
+                        </td>
+                        </tr>
+            </tbody>
+        </table>
+}

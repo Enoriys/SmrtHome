@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0307599c-796c-4afe-86da-da47d7c1bbe1" name="Dego@NASA 2015-05-31 03:24:45" runUser="Nasa\Dego" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="b9f55fb9-f132-4cfc-bd35-473d24199fde">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Dego_NASA 2015-05-31 03_24_45" />
+  </TestSettings>
+  <Times creation="2015-05-31T03:24:45.4397797+03:00" queuing="2015-05-31T03:24:45.6977945+03:00" start="2015-05-31T03:24:45.7817993+03:00" finish="2015-05-31T03:25:02.7987726+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="WebTest1" storage="c:\users\dego\documents\visual studio 2012\projects\smarthome\webandloadtestproject\webtest1.webtest" id="6b284fd7-1105-4d19-865b-1d736b2376ce" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iV2ViVGVzdDEiIElkPSI2YjI4NGZkNy0xMTA1LTRkMTktODY1Yi0xZDczNmIyMzc2Y2UiIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSIiIFN0b3BPbkVycm9yPSJGYWxzZSIgUmVjb3JkZWRSZXN1bHRGaWxlPSJXZWJUZXN0MS5hODIyMTM5OC1iNDk2LTQwMjItYmJmMy1mMjE1YTI4NDY0ZDgucmVjLndlYnRlc3RyZXN1bHQiPg0KICA8SXRlbXM+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjdlZWRhYzhlLWNiYTctNDE1NS04YjRiLWE1ZmE3MDQwYWY1NSIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly9sb2NhbGhvc3Q6MjE4NS8iIFRoaW5rVGltZT0iMSIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiAvPg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSJhMTViZTc2YS0yMGUwLTRkNWQtYWE5Yy00ZTZhM2ViOGM5YmEiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwOi8vbG9jYWxob3N0OjIxODUvSG9tZS9PdGhlckFjdGlvbnMiIFRoaW5rVGltZT0iMiIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIj4NCiAgICAgIDxFeHRyYWN0aW9uUnVsZXM+DQogICAgICAgIDxFeHRyYWN0aW9uUnVsZSBDbGFzc25hbWU9Ik1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uVGVzdFRvb2xzLldlYlRlc3RpbmcuUnVsZXMuRXh0cmFjdEhpZGRlbkZpZWxkcywgTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5RdWFsaXR5VG9vbHMuV2ViVGVzdEZyYW1ld29yaywgVmVyc2lvbj0xMC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhIiBWYXJpYWJsZU5hbWU9IjEiIERpc3BsYXlOYW1lPSLQmNC30LLQu9C10YfRjCDRgdC60YDRi9GC0YvQtSDQv9C+0LvRjyIgRGVzY3JpcHRpb249ItCY0LfQstC70LXQutC40YLQtSDQstGB0LUg0YHQutGA0YvRgtGL0LUg0L/QvtC70Y8g0LjQtyDQvtGC0LLQtdGC0LAg0Lgg0L/QvtC80LXRgdGC0LjRgtC1INC40YUg0LIg0LrQvtC90YLQtdC60YHRgiDRgtC10YHRgtCwLiI+DQogICAgICAgICAgPFJ1bGVQYXJhbWV0ZXJzPg0KICAgICAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iUmVxdWlyZWQiIFZhbHVlPSJUcnVlIiAvPg0KICAgICAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iSHRtbERlY29kZSIgVmFsdWU9IlRydWUiIC8+DQogICAgICAgICAgPC9SdWxlUGFyYW1ldGVycz4NCiAgICAgICAgPC9FeHRyYWN0aW9uUnVsZT4NCiAgICAgIDwvRXh0cmFjdGlvblJ1bGVzPg0KICAgIDwvUmVxdWVzdD4NCiAgICA8UmVxdWVzdCBNZXRob2Q9IlBPU1QiIEd1aWQ9IjMxM2IyNTZmLTIzZGEtNGIxOC05ZDU0LWJkOTVmOWMzNDA1YiIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly9sb2NhbGhvc3Q6MjE4NS9Ib21lL0RldmljZUdsb2JhbEFjdGlvbiIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiPg0KICAgICAgPEZvcm1Qb3N0SHR0cEJvZHk+DQogICAgICAgIDxGb3JtUG9zdFBhcmFtZXRlciBOYW1lPSJ0eXBlIiBWYWx1ZT0ie3skSElEREVOMS50eXBlfX0iIFJlY29yZGVkVmFsdWU9IkxhbXAiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IlRydWUiIC8+DQogICAgICAgIDxGb3JtUG9zdFBhcmFtZXRlciBOYW1lPSJBY3Rpb24iIFZhbHVlPSJ7eyRISURERU4xLkFjdGlvbn19IiBSZWNvcmRlZFZhbHVlPSJPTiIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iVHJ1ZSIgLz4NCiAgICAgICAgPEZvcm1Qb3N0UGFyYW1ldGVyIE5hbWU9IlBhcmFtZXRyIiBWYWx1ZT0ie3skSElEREVOMS5QYXJhbWV0cn19IiBSZWNvcmRlZFZhbHVlPSJudWxsLyIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iVHJ1ZSIgLz4NCiAgICAgICAgPEZvcm1Qb3N0UGFyYW1ldGVyIE5hbWU9IlgtUmVxdWVzdGVkLVdpdGgiIFZhbHVlPSJYTUxIdHRwUmVxdWVzdCIgUmVjb3JkZWRWYWx1ZT0iWE1MSHR0cFJlcXVlc3QiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IlRydWUiIC8+DQogICAgICA8L0Zvcm1Qb3N0SHR0cEJvZHk+DQogICAgPC9SZXF1ZXN0Pg0KICA8L0l0ZW1zPg0KICA8VmFsaWRhdGlvblJ1bGVzPg0KICAgIDxWYWxpZGF0aW9uUnVsZSBDbGFzc25hbWU9Ik1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uVGVzdFRvb2xzLldlYlRlc3RpbmcuUnVsZXMuVmFsaWRhdGVSZXNwb25zZVVybCwgTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5RdWFsaXR5VG9vbHMuV2ViVGVzdEZyYW1ld29yaywgVmVyc2lvbj0xMC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhIiBEaXNwbGF5TmFtZT0iVVJMLdCw0LTRgNC10YEg0L7RgtCy0LXRgtCwIiBEZXNjcmlwdGlvbj0i0J/RgNC+0LLQtdGA0LrQsCDRgtC+0LPQviwg0YfRgtC+IFVSTC3QsNC00YDQtdGBINC+0YLQstC10YLQsCDQv9C+0YHQu9C1INCy0YvQv9C+0LvQvdC10L3QuNGPINC/0LXRgNC10L3QsNC/0YDQsNCy0LvQtdC90LjQuSDRgtCw0LrQvtC5INC20LUsINC60LDQuiDQt9Cw0L/QuNGB0LDQvdC90YvQuSBVUkwt0LDQtNGA0LXRgSDQvtGC0LLQtdGC0LAuINCf0LDRgNCw0LzQtdGC0YDRiyBRdWVyeVN0cmluZyDQuNCz0L3QvtGA0LjRgNGD0Y7RgtGB0Y8uIiBMZXZlbD0iTG93IiBFeGVjdHVpb25PcmRlcj0iQmVmb3JlRGVwZW5kZW50cyIgLz4NCiAgICA8VmFsaWRhdGlvblJ1bGUgQ2xhc3NuYW1lPSJNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlRlc3RUb29scy5XZWJUZXN0aW5nLlJ1bGVzLlZhbGlkYXRpb25SdWxlUmVzcG9uc2VUaW1lR29hbCwgTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5RdWFsaXR5VG9vbHMuV2ViVGVzdEZyYW1ld29yaywgVmVyc2lvbj0xMC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhIiBEaXNwbGF5TmFtZT0i0KbQtdC70Ywg0LLRgNC10LzQtdC90Lgg0L7RgtCy0LXRgtCwIiBEZXNjcmlwdGlvbj0i0J/RgNC+0LLQtdGA0LrQsCDQvdCwINC/0YDQtdCy0YvRiNC10L3QuNC1INCy0YDQtdC80LXQvdC10Lwg0L7RgtCy0LXRgtCwINC90LAg0LfQsNC/0YDQvtGBINGN0YLQsNC70L7QvdCwINCy0YDQtdC80LXQvdC4INC+0YLQstC10YLQsCwg0YPQutCw0LfQsNC90L3QvtCz0L4g0LIg0LfQsNC/0YDQvtGB0LUuINCm0LXQu9C4INCy0YDQtdC80LXQvdC4INC+0YLQstC10YLQsCwg0YDQsNCy0L3Ri9C1INC90YPQu9GOLCDQsdGD0LTRg9GCINC/0YDQvtC/0YPRidC10L3Riy4iIExldmVsPSJMb3ciIEV4ZWN0dWlvbk9yZGVyPSJBZnRlckRlcGVuZGVudHMiPg0KICAgICAgPFJ1bGVQYXJhbWV0ZXJzPg0KICAgICAgICA8UnVsZVBhcmFtZXRlciBOYW1lPSJUb2xlcmFuY2UiIFZhbHVlPSIwIiAvPg0KICAgICAgPC9SdWxlUGFyYW1ldGVycz4NCiAgICA8L1ZhbGlkYXRpb25SdWxlPg0KICA8L1ZhbGlkYXRpb25SdWxlcz4NCjwvV2ViVGVzdD4=">
+      <Execution id="cf23de0a-ee04-4b75-8991-69573310656d" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="6b284fd7-1105-4d19-865b-1d736b2376ce" executionId="cf23de0a-ee04-4b75-8991-69573310656d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="cf23de0a-ee04-4b75-8991-69573310656d" testId="6b284fd7-1105-4d19-865b-1d736b2376ce" testName="WebTest1" computerName="NASA" duration="00:00:06.3102640" startTime="2015-05-31T03:24:45.8578036+03:00" endTime="2015-05-31T03:25:02.7617705+03:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf23de0a-ee04-4b75-8991-69573310656d">
+      <ResultFiles>
+        <ResultFile path="WebTest1.webtestResult" />
+      </ResultFiles>
+      <TestSettings name="Локальные" id="b9f55fb9-f132-4cfc-bd35-473d24199fde">
+        <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+        <Execution>
+          <TestTypeSpecific>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="Execution Agents">
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="Dego_NASA 2015-05-31 03_24_45" />
+      </TestSettings>
+      <WebTestResultFilePath>Dego_NASA 2015-05-31 03_24_45\In\cf23de0a-ee04-4b75-8991-69573310656d\WebTest1.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>
