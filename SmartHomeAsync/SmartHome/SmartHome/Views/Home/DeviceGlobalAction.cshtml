@@ -48,7 +48,7 @@
         </tr>
         </tbody>
         </table>  
-     <table>
+        <table>
             <tbody>
                         <tr>
                         <td style ="vertical-align:top">
@@ -62,9 +62,9 @@
                         <div id ="LampGON" style="display:none;" align="center">
                         <img src="~/Images/spinner.gif" />
                         </div>
-                       </td>
-                       </tr>
-                       <tr>
+                        </td>
+                        </tr>
+                        <tr>
                         <td style ="vertical-align:top"> 
                         @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "LampLamp", LoadingElementId = "LampGOFF" }))
                         {
@@ -125,7 +125,7 @@ else if (ViewBag.DeviceType == "Tempr")
         </tr>
         </tbody>
         </table>  
-    <table>
+        <table>
             <tbody>
                         <tr>
                         <td style ="vertical-align:top">
@@ -137,7 +137,7 @@ else if (ViewBag.DeviceType == "Tempr")
                             } 
                             <div id ="TemprCheck" style="display:none;" align="center">
                             <img src="~/Images/spinner.gif" />
-                           </div
+                           </div>
                         </td>
                         </tr>
             </tbody>
@@ -146,8 +146,8 @@ else if (ViewBag.DeviceType == "Tempr")
 else if (ViewBag.DeviceType == "Lock")
 {
             <table>
-        <tbody>
-        <tr>
+            <tbody>
+            <tr>
             @foreach (var device in Model.Devices)
             {
                 <td style ="vertical-align:top">
@@ -181,8 +181,7 @@ else if (ViewBag.DeviceType == "Lock")
                                 <p align ="center">Device status: @device.status</p>
                                 </div>                                                
                             }
-                        }
-                 
+                        }            
                     <div id =@stri style="display:none;" align="center">
                     <img src="~/Images/spinner.gif" />
                     </div>
@@ -190,9 +189,8 @@ else if (ViewBag.DeviceType == "Lock")
             }
         </tr>
         </tbody>
-        </table>
-    
-    <table>
+        </table> 
+        <table>
             <tbody>
                         <tr>
                         <td style ="vertical-align:top">
@@ -206,9 +204,9 @@ else if (ViewBag.DeviceType == "Lock")
                         <div id ="LockON" style="display:none;" align="center">
                         <img src="~/Images/spinner.gif" />
                         </div>
-                       </td>
-                       </tr>
-                       <tr>
+                        </td>
+                        </tr>
+                        <tr>
                         <td style ="vertical-align:top"> 
                         @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "LockLock", LoadingElementId = "LockOFF" }))
                         {

@@ -129,8 +129,7 @@
                             }
                         }
                     }
-
-
+                    
                     else if (tp == "Tempr")
                     {
                         using (Ajax.BeginForm("DeviceActionTempr", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = device.DeviceID.ToString(), LoadingElementId = stri }))
@@ -185,8 +184,7 @@
                                 </div>                                                
                             }
                         }
-                    }
-                 
+                    }               
                     <div id =@stri style="display:none;" align="center">
                     <img src="~/Images/spinner.gif" />
                     </div>
@@ -196,9 +194,6 @@
         </tr>
         </tbody>
         </table>
-
-
-
 
         <table>
             <tbody>
@@ -216,9 +211,9 @@
                         <div id ="LampGON" style="display:none;" align="center">
                         <img src="~/Images/spinner.gif" />
                         </div>
-                       </td>
-                       </tr>
-                       <tr>
+                        </td>
+                        </tr>
+                        <tr>
                         <td style ="vertical-align:top"> 
                         @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = Type, LoadingElementId = "LampGOFF" }))
                         {
@@ -263,9 +258,9 @@
                         <div id ="LockON" style="display:none;" align="center">
                         <img src="~/Images/spinner.gif" />
                         </div>
-                       </td>
-                       </tr>
-                       <tr>
+                        </td>
+                        </tr>
+                        <tr>
                         <td style ="vertical-align:top"> 
                         @using (Ajax.BeginForm("DeviceGlobalAction", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = Type, LoadingElementId = "LockOFF" }))
                         {
@@ -282,7 +277,7 @@
                 }
             </tbody>
         </table>
-      </div> 
+    </div> 
     </div>
 }
 
