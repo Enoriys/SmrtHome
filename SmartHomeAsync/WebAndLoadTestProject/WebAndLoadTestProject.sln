@@ -6,9 +6,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20CA5088-DBBB-4B88-912F-6720FBBDED7D}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
+		WebAndLoadTestProject.vsmdi = WebAndLoadTestProject.vsmdi
 	EndProjectSection
 EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WebAndLoadTestProject.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

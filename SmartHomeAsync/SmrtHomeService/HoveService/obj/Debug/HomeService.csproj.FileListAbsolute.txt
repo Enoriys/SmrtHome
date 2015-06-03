@@ -14,3 +14,11 @@ C:\Users\Dego\Desktop\SmartHomeAsync\SmrtHomeService\HoveService\bin\Debug\Devic
 C:\Users\Dego\Desktop\SmartHomeAsync\SmrtHomeService\HoveService\obj\Debug\HomeService.csprojResolveAssemblyReference.cache
 C:\Users\Dego\Desktop\SmartHomeAsync\SmrtHomeService\HoveService\obj\Debug\HoveService.dll
 C:\Users\Dego\Desktop\SmartHomeAsync\SmrtHomeService\HoveService\obj\Debug\HoveService.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\bin\Debug\HoveService.dll.config
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\bin\Debug\HoveService.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\bin\Debug\HoveService.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\bin\Debug\DevicesController.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\bin\Debug\DevicesController.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\obj\Debug\HomeService.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\obj\Debug\HoveService.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\SmrtHomeService\HoveService\obj\Debug\HoveService.pdb

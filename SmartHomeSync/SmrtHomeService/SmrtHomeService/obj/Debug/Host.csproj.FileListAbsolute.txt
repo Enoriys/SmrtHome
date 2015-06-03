@@ -18,3 +18,6 @@ C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\Ho
 C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\HoveService.pdb
 C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\DevicesController.pdb
 C:\Users\Dego\Desktop\SmartHomeSync\SmrtHomeService\SmrtHomeService\obj\Debug\Host.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\SmrtHomeService\SmrtHomeService\bin\Debug\SmrtHomeService.exe.config
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.exe
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\SmrtHomeService\SmrtHomeService\obj\Debug\SmrtHomeService.pdb

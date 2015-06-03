@@ -11,3 +11,11 @@ C:\Users\Dego\Desktop\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\
 C:\Users\Dego\Desktop\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.pdb
 C:\Users\Dego\Desktop\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.dll
 C:\Users\Dego\Desktop\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebTest1.webtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebTest2.webtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest1.loadtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest2.loadtest

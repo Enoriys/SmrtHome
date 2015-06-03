@@ -5,3 +5,12 @@ C:\Users\Dego\Desktop\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject
 C:\Users\Dego\Desktop\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.pdb
 C:\Users\Dego\Desktop\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest1.loadtest
 C:\Users\Dego\Desktop\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebTest1.webtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebTest2.webtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest1.loadtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.dll
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.pdb
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeAsync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest2.loadtest
