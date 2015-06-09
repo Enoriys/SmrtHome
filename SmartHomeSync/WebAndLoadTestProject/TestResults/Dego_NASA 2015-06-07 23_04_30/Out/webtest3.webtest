@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest3" Id="043603c6-1e66-41cc-bee2-25e6450863e0" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="WebTest3.387c53fd-72f1-4749-85f8-b2969bae2fdd.rec.webtestresult">
+  <Items>
+    <Request Method="GET" Guid="97ae4511-607e-4353-95db-6578348a84e0" Version="1.1" Url="http://google.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://www.google.com.ua/?gfe_rd=cr&amp;ei=wqN0Va6yArKt8wfH0YCgBg&amp;gws_rd=ssl" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="8115e3cd-2bc6-4883-bd7b-a83212ef8f7f" Version="1.1" Url="https://www.google.com.ua/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <ExtractionRules>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="2" DisplayName="Извлечь скрытые поля" Description="Извлеките все скрытые поля из ответа и поместите их в контекст теста.">
+              <RuleParameters>
+                <RuleParameter Name="Required" Value="True" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+              </RuleParameters>
+            </ExtractionRule>
+          </ExtractionRules>
+          <CorrelationExtractionRules>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam140.gbv" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="&amp;gbv=" />
+                <RuleParameter Name="EndsWith" Value="&quot;" />
+                <RuleParameter Name="Index" Value="0" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+          </CorrelationExtractionRules>
+          <QueryStringParameters>
+            <QueryStringParameter Name="gfe_rd" Value="cr" RecordedValue="cr" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ei" Value="wqN0Va6yArKt8wfH0YCgBg" RecordedValue="wqN0Va6yArKt8wfH0YCgBg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="gws_rd" Value="ssl" RecordedValue="ssl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Извлечь скрытые поля" Description="Извлеките все скрытые поля из ответа и поместите их в контекст теста.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="8ae565c8-21cb-431f-a6a5-22311a9cd211" Version="1.1" Url="https://www.google.com.ua/xjs/_/js/k=xjs.hp.en_US.phY1HL1t-C8.O/m=sb_he,jsa,d,csi/rt=j/d=1/t=zcms/rs=ACT90oHCYCNc5iCFy7ISUbqrg6l4s7Dqzg" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="7dee0c2d-a399-4ecc-88d4-dcbcebec62d2" Version="1.1" Url="https://clients1.google.com.ua/generate_204" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="bbd4ac57-cbb1-45a8-ab8c-c9b1eb2216df" Version="1.1" Url="https://www.google.com.ua/gen_204" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="webhp" RecordedValue="webhp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imc" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imn" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imp" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ei" Value="w6N0VcCFGoy7swHC2peIDg" RecordedValue="w6N0VcCFGoy7swHC2peIDg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="3700331,4025836,4026240,4029570,4029815,4031450,4032500,4032522,4032678,4032711,4033020,4033307,4034270,4034332,4034425,4034884,4035816,4035933,4036471,4036485,4037433,4037457,4037531,4037679,4037849,4037921,4038040,4038414,4038425,8300154,8300157,8500394,8500948,8501248,8501295,8501350,8501406,8501489,8501594,10200083,10201054,10201102,10201181,10201210" RecordedValue="3700331,4025836,4026240,4029570,4029815,4031450,4032500,4032522,4032678,4032711,4033020,4033307,4034270,4034332,4034425,4034884,4035816,4035933,4036471,4036485,4037433,4037457,4037531,4037679,4037849,4037921,4038040,4038414,4038425,8300154,8300157,8500394,8500948,8501248,8501295,8501350,8501406,8501489,8501594,10200083,10201054,10201102,10201181,10201210" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dM" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="atyp" Value="csi" RecordedValue="csi" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adh" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="xjs" Value="init.227.2.sb_he.226.jsa.1" RecordedValue="init.227.2.sb_he.226.jsa.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="xjsls.2012,prt.2013,iml.2013,ol.2148,xjsee.3726,xjs.3845" RecordedValue="xjsls.2012,prt.2013,iml.2013,ol.2148,xjsee.3726,xjs.3845" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f47e26b2-db7f-45e1-afe7-bf481f1b8b85" Version="1.1" Url="https://clients1.google.com.ua/complete/search" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hl" Value="{{$HIDDEN2.hl}}" RecordedValue="uk" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_rn" Value="34" RecordedValue="34" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_ri" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cp" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_id" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="q" Value="%D0%BE" RecordedValue="%D0%BE" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_gbg" Value="6B4Mp38U3rw35512" RecordedValue="6B4Mp38U3rw35512" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7afd0070-155b-42a4-9be2-485b248d297b" Version="1.1" Url="https://clients1.google.com.ua/complete/search" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hl" Value="{{$HIDDEN2.hl}}" RecordedValue="uk" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_rn" Value="34" RecordedValue="34" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_ri" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cp" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_id" Value="9" RecordedValue="9" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="q" Value="%D0%BE%D1%85" RecordedValue="%D0%BE%D1%85" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_gbg" Value="KLb55r8a45c0WBLN8Jy9qnT6DBr619JKu0" RecordedValue="KLb55r8a45c0WBLN8Jy9qnT6DBr619JKu0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1d11c15d-1da4-4cb0-8057-2963e7afa06a" Version="1.1" Url="https://clients1.google.com.ua/complete/search" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hl" Value="{{$HIDDEN2.hl}}" RecordedValue="uk" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_rn" Value="34" RecordedValue="34" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_ri" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cp" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_id" Value="g" RecordedValue="g" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="q" Value="%D0%BB" RecordedValue="%D0%BB" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_gbg" Value="n374D8zM8CS9Ib2FleXCQ4" RecordedValue="n374D8zM8CS9Ib2FleXCQ4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="261735e2-aabb-4deb-9d2d-5c67e5e3c4d3" Version="1.1" Url="https://clients1.google.com.ua/complete/search" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hl" Value="{{$HIDDEN2.hl}}" RecordedValue="uk" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_rn" Value="34" RecordedValue="34" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_ri" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cp" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_id" Value="j" RecordedValue="j" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="q" Value="%D0%BB%D0%BE" RecordedValue="%D0%BB%D0%BE" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_gbg" Value="XzzZ0KsZmLRekzt3Iim468Mz59YP916oL4" RecordedValue="XzzZ0KsZmLRekzt3Iim468Mz59YP916oL4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c078c1ea-59ad-4c4e-9131-514cb5479f7c" Version="1.1" Url="https://clients1.google.com.ua/complete/search" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hl" Value="{{$HIDDEN2.hl}}" RecordedValue="uk" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_rn" Value="34" RecordedValue="34" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_ri" Value="heirloom-hp" RecordedValue="heirloom-hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cp" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_id" Value="m" RecordedValue="m" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="q" Value="%D0%BB%D0%BE%D1%85" RecordedValue="%D0%BB%D0%BE%D1%85" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_gbg" Value="niO5491DeV19g1tUDw1v79" RecordedValue="niO5491DeV19g1tUDw1v79" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="41dbc373-bcb9-4693-8133-e5a926a77513" Version="1.1" Url="https://www.google.com.ua/search" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam151.ei" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;amp;ei=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam166.ei" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;amp;ei=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="hl" Value="{{$HIDDEN1.hl}}" RecordedValue="uk" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="source" Value="{{$HIDDEN1.source}}" RecordedValue="hp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="q" Value="%D0%BB%D0%BE%D1%85" RecordedValue="%D0%BB%D0%BE%D1%85" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gbv" Value="2" RecordedValue="2" CorrelationBinding="{{QueryStringParam140.gbv}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="oq" Value="%D0%BB%D0%BE%D1%85" RecordedValue="%D0%BB%D0%BE%D1%85" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="gs_l" Value="heirloom-hp.3..0l10.2185.6209.0.7579.6.5.1.0.0.0.185.785.0j5.5.0....0...1ac.1.34.heirloom-hp..0.6.799.uCMIx2ZqvVc" RecordedValue="heirloom-hp.3..0l10.2185.6209.0.7579.6.5.1.0.0.0.185.785.0j5.5.0....0...1ac.1.34.heirloom-hp..0.6.799.uCMIx2ZqvVc" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="416ac654-22dd-4419-b0c7-15f7c3a85eb0" Version="1.1" Url="https://clients1.google.com.ua/generate_204" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="631394f2-1405-472e-8fe2-ee43b3018011" Version="1.1" Url="https://www.google.com.ua/gen_204" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="hplus" RecordedValue="hplus" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ei" Value="z6N0VfrHNoWpsgHxi4HQCg" RecordedValue="z6N0VfrHNoWpsgHxi4HQCg" CorrelationBinding="{{QueryStringParam151.ei}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="undefined" RecordedValue="undefined" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dM" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="atyp" Value="csi" RecordedValue="csi" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adh" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="xjs" Value="init.503.2.sb_he.503.jsa.0" RecordedValue="init.503.2.sb_he.503.jsa.0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="xjsls.241,xjsee.761,ol.807" RecordedValue="xjsls.241,xjsee.761,ol.807" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ceb1a74c-63eb-49c9-b962-df596ab41be3" Version="1.1" Url="https://www.google.com.ua/xjs/_/js/k=xjs.hp.en_US.phY1HL1t-C8.O/m=sb_he,jsa,d,csi/rt=j/d=1/t=zcms/rs=ACT90oHCYCNc5iCFy7ISUbqrg6l4s7Dqzg" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="77af48ac-c24e-4aca-9631-86d3a4c52f91" Version="1.1" Url="https://www.google.com.ua/gen_204" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="hplus" RecordedValue="hplus" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ei" Value="z6N0VfrHNoWpsgHxi4HQCg" RecordedValue="z6N0VfrHNoWpsgHxi4HQCg" CorrelationBinding="{{QueryStringParam166.ei}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="undefined" RecordedValue="undefined" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dM" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="atyp" Value="csi" RecordedValue="csi" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adh" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="xjs" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="URL-адрес ответа" Description="Проверка того, что URL-адрес ответа после выполнения перенаправлений такой же, как записанный URL-адрес ответа. Параметры QueryString игнорируются." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Цель времени ответа" Description="Проверка на превышение временем ответа на запрос эталона времени ответа, указанного в запросе. Цели времени ответа, равные нулю, будут пропущены." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

@@ -19,3 +19,5 @@ C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTes
 C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.dll
 C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\obj\Debug\WebAndLoadTestProject.pdb
 C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest2.loadtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\WebTest3.webtest
+C:\Users\Dego\Desktop\SmrtHome\SmartHomeSync\WebAndLoadTestProject\WebAndLoadTestProject\bin\Debug\LoadTest3.loadtest
