@@ -96,9 +96,9 @@
                 {
                     string stri = device.DeviceID.ToString() + device.Type.ToString();
                     
-                    <p align ="center">Device ID: @device.DeviceID</p> 
-                    <p align ="center">Device Name: @device.Name</p>
-                    <p align ="center">Device Room: @device.Room</p>        
+                    <p align ="center">ID пристрою: @device.DeviceID</p> 
+                    <p align ="center">Ім'я пристрою: @device.Name</p>
+                    <p align ="center">Кімната: @device.Room</p>        
                     
                     if (tp == "Lamp")
                     {
@@ -113,7 +113,7 @@
                                  <input type="hidden" name = "Action" value ="OFF"/>
                                  <input type="hidden" name = "Parametr" value = null/>                                                      
                                  <input type="submit" value="" style ="background-image: url(..//LightBulbOn.png);"/>
-                                 <p align ="center">Device status: @device.status</p>
+                                 <p align ="center">Статус пристрою: @device.status</p>
                                  </div>
                             }
                             else
@@ -124,7 +124,7 @@
                                 <input type="hidden" name = "Action" value ="ON"/>
                                 <input type="hidden" name = "Parametr" value = null/>
                                 <input type="submit" value="" style ="background-image: url(..//LightBulbOff.png);"/>
-                                <p align ="center">Device status: @device.status</p>
+                                <p align ="center">Статус пристрою: @device.status</p>
                                 </div>                                                
                             }
                         }
@@ -181,7 +181,7 @@
                                 <input type="hidden" name = "Action" value ="Unlocked"/>
                                 <input type="hidden" name = "Parametr" value = null/>
                                 <input type="submit" value="" style= "background-image: url(..//Locked.png);"/>
-                                <p align ="center">Device status: @device.status</p>
+                                <p align ="center">Статус пристрою: @device.status</p>
                                 </div>                                                
                             }
                         }

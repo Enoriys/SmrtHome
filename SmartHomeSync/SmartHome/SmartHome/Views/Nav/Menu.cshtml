@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<int>
 
-@Html.ActionLink("Home", "Index", "Home")
+@Html.ActionLink("Домашня сторінка", "Index", "Home")
 
 @foreach (int link in Model)
 {
-@Html.RouteLink("Room "+link.ToString(), new
+@Html.RouteLink("Кімната "+link.ToString(), new
 {
     controller = "Home",
     action = "List",
@@ -15,4 +15,4 @@
 })
 }
 
-@Html.ActionLink("Other", "OtherActions", "Home")
+@Html.ActionLink("Інше", "OtherActions", "Home")
